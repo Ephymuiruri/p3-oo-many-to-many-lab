@@ -2,7 +2,7 @@ class Author:
     All=[]
     def __init__(self,name):
         self.name = name
-        Author.all.append(self)
+        Author.All.append(self)
     def contracts(self):
         print(Contract.All)
         return[contract for contract in Contract.All if contract.author == self]
